@@ -1,10 +1,10 @@
-.ck.ck-editor__main>.ck-editor__editable {
+.ck.ck-editor__main > .ck-editor__editable {
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.ck.ck-editor__main>.ck-editor__editable.ck-focused {
+.ck.ck-editor__main > .ck-editor__editable.ck-focused {
   border: none;
 }
 
