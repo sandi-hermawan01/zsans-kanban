@@ -164,17 +164,9 @@ const Sidebar = () => {
                             : "pointer!important",
                         }}
                       >
-                        <Typography
-                          variant="body2"
-                          fontWeight="700"
-                          sx={{
-                            whiteSpace: "nowrap",
-                            overflow: "hidden",
-                            textOverflow: "ellipsis",
-                          }}
-                        >
+                        <small className="text-sm font-bold leading-none text-nowrap">
                           {item.icon} {item.title}
-                        </Typography>
+                        </small>
                       </ListItemButton>
                     )}
                   </Draggable>
