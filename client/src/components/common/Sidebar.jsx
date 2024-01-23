@@ -111,9 +111,10 @@ const Sidebar = () => {
               justifyContent: "space-between",
             }}
           >
-            <Typography variant="body2" fontWeight="700">
+            <small className="text-sm font-medium leading-none">
               {user.username}
-            </Typography>
+            </small>
+
             <IconButton onClick={logout}>
               <LogoutOutlinedIcon fontSize="small" />
             </IconButton>
@@ -131,9 +132,9 @@ const Sidebar = () => {
               justifyContent: "space-between",
             }}
           >
-            <Typography variant="body2" fontWeight="700">
-              Private
-            </Typography>
+            <small className="text-sm font-bold leading-none">
+              Your Project
+            </small>
             <IconButton onClick={addBoard}>
               <AddBoxOutlinedIcon fontSize="small" />
             </IconButton>
