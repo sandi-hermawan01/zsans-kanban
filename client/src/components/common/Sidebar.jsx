@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import {
   Box,
-  Drawer,
+  // Drawer,
   IconButton,
   List,
   ListItem,
@@ -17,6 +17,9 @@ import boardApi from "../../api/boardApi";
 import { setBoards } from "../../redux/features/boardSlice";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import FavouriteList from "./FavouriteList";
+
+//shadcn ui
+import { Drawer } from "../../components/ui/drawer";
 
 const Sidebar = () => {
   const user = useSelector((state) => state.user.value);
