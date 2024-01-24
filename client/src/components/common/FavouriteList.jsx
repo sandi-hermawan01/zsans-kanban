@@ -78,6 +78,9 @@ const FavouriteList = () => {
                       component={Link}
                       to={`/boards/${item.id}`}
                       sx={{
+                        ml: "5px",
+                        mb: "2px",
+                        borderRadius: "3px",
                         pl: "20px",
                         cursor: snapshot.isDragging
                           ? "grab"

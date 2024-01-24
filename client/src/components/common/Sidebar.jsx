@@ -1,12 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
 import {
   Box,
-  // Drawer,
+  Drawer,
   IconButton,
   List,
   ListItem,
   ListItemButton,
-  Typography,
+  // Typography,
 } from "@mui/material";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
@@ -17,9 +17,6 @@ import boardApi from "../../api/boardApi";
 import { setBoards } from "../../redux/features/boardSlice";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import FavouriteList from "./FavouriteList";
-
-//shadcn ui
-import { Drawer } from "../../components/ui/drawer";
 
 const Sidebar = () => {
   const user = useSelector((state) => state.user.value);
@@ -120,24 +117,24 @@ const Sidebar = () => {
             </IconButton>
           </Box>
         </ListItem>
-        <Box sx={{ paddingTop: "10px" }} />
+        <Box sx={{ paddingTop: "5px" }} />
         <FavouriteList />
-        <Box sx={{ paddingTop: "10px" }} />
-        <ListItem>
+        <Box sx={{ paddingTop: "5px" }} />
+        <ListItem disablePadding sx={{}}>
           <Box
             sx={{
               width: "100%",
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
+              justifyContent: "start",
             }}
           >
-            <small className="text-sm font-bold leading-none">
-              Your Project
-            </small>
-            <IconButton onClick={addBoard}>
+            <ListItemButton onClick={addBoard} sx={{ marginBottom: "3px" }}>
               <AddBoxOutlinedIcon fontSize="small" />
-            </IconButton>
+              <small className="text-sm font-bold leading-none ml-2">
+                Your Project
+              </small>
+            </ListItemButton>
           </Box>
         </ListItem>
         <DragDropContext onDragEnd={onDragEnd}>
@@ -158,6 +155,9 @@ const Sidebar = () => {
                         component={Link}
                         to={`/boards/${item.id}`}
                         sx={{
+                          ml: "5px",
+                          mb: "2px",
+                          borderRadius: "3px",
                           pl: "20px",
                           cursor: snapshot.isDragging
                             ? "grab"
