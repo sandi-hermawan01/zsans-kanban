@@ -160,7 +160,7 @@ const Board = () => {
           {isFavourite ? (
             <StarOutlinedIcon color="warning" />
           ) : (
-            <StarBorderOutlinedIcon />
+            <StarBorderOutlinedIcon sx={{ color: "#A3A29E" }} />
           )}
         </IconButton>
         <IconButton variant="outlined" color="error" onClick={deleteBoard}>
@@ -178,7 +178,7 @@ const Board = () => {
             variant="outlined"
             fullWidth
             sx={{
-              "& .MuiOutlinedInput-input": { padding: 0 , color: "black"},
+              "& .MuiOutlinedInput-input": { padding: 0, color: "black" },
               "& .MuiOutlinedInput-notchedOutline": { border: "unset " },
               "& .MuiOutlinedInput-root": {
                 fontSize: "2rem",

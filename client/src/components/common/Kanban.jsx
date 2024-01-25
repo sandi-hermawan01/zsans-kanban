@@ -176,6 +176,8 @@ const Kanban = (props) => {
                         alignItems: "center",
                         justifyContent: "space-between",
                         marginBottom: "10px",
+                        borderBottom: "1px #e0e0e0 solid",
+                        padding: "3px 0 2px 5px",
                       }}
                     >
                       <TextField
@@ -190,7 +192,7 @@ const Kanban = (props) => {
                             color: "black",
                           },
                           "& .MuiOutlinedInput-notchedOutline": {
-                            border: "unset ",
+                            border: "unset",
                           },
                           "& .MuiOutlinedInput-root": {
                             fontSize: "1rem",
@@ -234,6 +236,9 @@ const Kanban = (props) => {
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
                             sx={{
+                              // color: "grey",
+                              backgroundColor: "grey",
+                              borderRadius: "8px",
                               padding: "10px",
                               marginBottom: "10px",
                               cursor: snapshot.isDragging
