@@ -178,7 +178,7 @@ const Board = () => {
             variant="outlined"
             fullWidth
             sx={{
-              "& .MuiOutlinedInput-input": { padding: 0 },
+              "& .MuiOutlinedInput-input": { padding: 0 , color: "black"},
               "& .MuiOutlinedInput-notchedOutline": { border: "unset " },
               "& .MuiOutlinedInput-root": {
                 fontSize: "2rem",
@@ -194,7 +194,7 @@ const Board = () => {
             multiline
             fullWidth
             sx={{
-              "& .MuiOutlinedInput-input": { padding: 0 },
+              "& .MuiOutlinedInput-input": { padding: 0, color: "#A3A29E" },
               "& .MuiOutlinedInput-notchedOutline": { border: "unset " },
               "& .MuiOutlinedInput-root": { fontSize: "0.8rem" },
             }}

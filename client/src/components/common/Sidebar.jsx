@@ -108,12 +108,12 @@ const Sidebar = () => {
               justifyContent: "space-between",
             }}
           >
-            <small className="text-sm font-medium leading-none">
+            <small className="text-sm font-medium leading-none text-[#A3A29E]">
               {user.username}
             </small>
 
             <IconButton onClick={logout}>
-              <LogoutOutlinedIcon fontSize="small" />
+              <LogoutOutlinedIcon fontSize="small" sx={{ color: "#A3A29E" }} />
             </IconButton>
           </Box>
         </ListItem>
@@ -130,8 +130,8 @@ const Sidebar = () => {
             }}
           >
             <ListItemButton onClick={addBoard} sx={{ marginBottom: "3px" }}>
-              <AddBoxOutlinedIcon fontSize="small" />
-              <small className="text-sm font-bold leading-none ml-2">
+              <AddBoxOutlinedIcon fontSize="small" sx={{ color: "#A3A29E" }} />
+              <small className="text-sm font-bold leading-none ml-2 text-[#A3A29E]">
                 Your Project
               </small>
             </ListItemButton>
@@ -164,7 +164,7 @@ const Sidebar = () => {
                             : "pointer!important",
                         }}
                       >
-                        <small className="text-sm font-bold leading-none text-nowrap">
+                        <small className="text-sm font-medium leading-none text-nowrap text-[#A3A29E]">
                           {item.icon} {item.title}
                         </small>
                       </ListItemButton>

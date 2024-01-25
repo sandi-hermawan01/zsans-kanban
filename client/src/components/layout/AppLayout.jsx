@@ -40,7 +40,7 @@ const AppLayout = () => {
           flexGrow: 1,
           p: 1,
           width: "max-content",
-          backgroundColor: "#191919",
+          backgroundColor: "#fff",
         }}
       >
         <Outlet />

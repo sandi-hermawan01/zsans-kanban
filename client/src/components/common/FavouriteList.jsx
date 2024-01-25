@@ -57,7 +57,9 @@ const FavouriteList = () => {
             justifyContent: "space-between",
           }}
         >
-          <small className="text-sm font-bold leading-none">Favourites</small>
+          <small className="text-sm font-bold leading-none text-[#A3A29E]">
+            Favourites
+          </small>
         </Box>
       </ListItem>
       <DragDropContext onDragEnd={onDragEnd}>
@@ -89,11 +91,12 @@ const FavouriteList = () => {
                     >
                       <Typography
                         variant="body2"
-                        fontWeight="700"
+                        fontWeight="500"
                         sx={{
                           whiteSpace: "nowrap",
                           overflow: "hidden",
                           textOverflow: "ellipsis",
+                          color: "#A3A29E",
                         }}
                       >
                         {item.icon} {item.title}
